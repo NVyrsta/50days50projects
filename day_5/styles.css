@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu');
 
 * {
   box-sizing: border-box;
@@ -12,6 +12,22 @@ body {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 /* ========================= */
+.bg {
+  background: url('https://wallpapers.com/images/hd/trees-and-lake-fall-halmkbg3ac74oe1d.webp')
+    no-repeat center center/cover;
+  height: calc(100vh + 60px);
+  width: calc(100vw + 60px);
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  border: 1px solid red;
+  z-index: -1;
+  filter: blur(30px);
+}
+.loading-text {
+  color: white;
+  font-size: 50px;
+}
