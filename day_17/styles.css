@@ -12,6 +12,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--primary-clr);
+  position: relative;
 }
 /* ========================= */
 header {
@@ -19,6 +20,10 @@ header {
   display: flex;
   justify-content: flex-end;
   background-color: var(--secondary-clr);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.8);
 }
 .search {
   background-color: transparent;
@@ -39,13 +44,15 @@ header {
 main {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 80px;
 }
 .movie {
   width: 300px;
   margin: 1rem;
   background-color: var(--secondary-clr);
   position: relative;
-  box-shadow: 0 4 px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   border-radius: 3px;
 }
